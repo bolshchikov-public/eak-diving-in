@@ -47,13 +47,10 @@ But anyway, what does it have?
 	* `templates` is for handlebars
 	* `templates/components` is for handlebars of components
 	* `views` is for JS to customize your views
-
 	* `index.html` as usual
 	* `app.js` is an entry point
 	* `router.js` to declare the map of routes
-
 For more, read [here](http://iamstef.net/ember-app-kit/guides/getting-started.html)
-
 4. Little note about ES6 modules
 It's a distinct feature of EAK. Each file is a separate module where
 its dependencies are declared at the top and exports at the bottom of

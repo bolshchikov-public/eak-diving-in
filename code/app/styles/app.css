@@ -1,8 +1,17 @@
-/* Put your CSS here */
-html, body {
-    margin: 20px;
+.nav {
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 10px;
+  font: 17px bold 'Verdana';
 }
-
-@keyframes domChanged { from { background: yellow; } }
-@-webkit-keyframes domChanged { from { background: yellow; } }
-.ember-view { animation: domChanged 1s; -webkit-animation: domChanged 1s; }
+.nav li {
+  display: inline;
+  margin-right: 10px;
+}
+.nav li:first-child {
+  margin-left: 30px;
+}
+.nav li a {
+  text-decoration: none;
+  color: darkblue;
+}
