@@ -1,4 +1,4 @@
-# Notes of starting and use EAK
+# Notes on getting started with Ember App Kit
 
 ## In short what the **** is Ember App Kit
 It's a skeleton for you ambition Ember App with
@@ -60,6 +60,13 @@ To declare the import dependency use the following syntax
 		import MyModel from "appkit/models/foo-model";
 
 That means import the `default` export from the file `foo-model` as a `MyModel`.
+
+Pay attention to the `appkit` from the dependency declaration. This is a module
+prefix that is configured from `app.js`.
+
+		var App = Ember.Application.extend({
+			modulePrefix: 'appkit', // TODO: loaded via config
+		});
 
 Export declarations declare that a top-level declaration in a module is visible externally to the module.
 [ES6 Transpiler](https://github.com/square/es6-module-transpiler#supported-es6-module-syntax) allows several

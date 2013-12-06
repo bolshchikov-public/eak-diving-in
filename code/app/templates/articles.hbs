@@ -1,1 +1,9 @@
 <h3>Articles</h3>
+
+<ul class="articles">
+	{{#each model}}
+		<li>{{#link-to 'article' this}} {{this.title}} {{/link-to}}</li>
+	{{/each}}
+</ul>
+
+{{outlet}}
