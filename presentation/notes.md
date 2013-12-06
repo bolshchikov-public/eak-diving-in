@@ -60,7 +60,6 @@ To declare the import dependency use the following syntax
 		import MyModel from "appkit/models/foo-model";
 
 That means import the `default` export from the file `foo-model` as a `MyModel`.
-
 Pay attention to the `appkit` from the dependency declaration. This is a module
 prefix that is configured from `app.js`.
 
@@ -78,3 +77,8 @@ exports BUT the EAK currently supports only the
 				return ['red', 'yellow', 'blue'];
 			}
 		});
+
+5. Ember App Kit has qUnit and Karma integration including coverage. How cool is that, ah?
+EAK allows to write two types of tests: unit and acceptance tests. Unit tests can be used to confirm
+that each part of the application **can** work as designed. Acceptance tests confirm that each of them
+**do** behave as expected (i.e. they are working together as designed).
